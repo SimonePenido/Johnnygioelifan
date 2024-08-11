@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'><link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <title>Johnny Gioeli | Official Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -22,6 +25,9 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
+        }
+        header h1 {
+            font-weight: 400;
         }
         nav {
             display: flex;
@@ -58,7 +64,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: #000;
+            text-shadow: 3px 3px 5px rgba(248, 247, 247, 0.979);
             text-align: center;
         }
         .hero h1 {
@@ -71,8 +78,9 @@
     }
 
     .hero h1 {
-        font-size: 1.5em;
+        font-size: 2.5em;
         padding: 0 10px;
+        color: #000;
     }
 }
 
@@ -80,11 +88,11 @@
             padding: 40px;
         }
         section h2 {
-            font-size: 1.5em;
+            font-size: 2rem;
             text-align: center;
         }
         section p {
-            font-size: 1em;
+            font-size: 1.2rem;
             text-align: center;
         }
         .social_links {
@@ -96,13 +104,14 @@
 }
 
         .social_links a {
-    color: #333;
-    font-size: 2em;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+            color: #333;
+            font-size: 2em;
+            margin: 0 15px;
+        transition: color 0.3s ease;
 }
-.social_links a:hover {
-    color: #555;
+        .social_links a:hover {
+            color: #555;
+            scale: 1.3;
 }
         .gallery {
             display: flex;
@@ -148,7 +157,7 @@
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             margin-top: 20px;
             font: 0.8em sans-serif;
         }
@@ -162,7 +171,6 @@
                 <img src="images/logo2.png" style="border-radius: 20px;" alt="Johnny Gioeli">
             </a><h1>Johnny Gioeli</h1>
         </div>
-       
     </header>
 
     <nav>
@@ -189,7 +197,7 @@
             </a>
     
             <a href="https://x.com/Crush40Johnny?mx=2" target="_blank">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-x"></i>
             </a>
     
             <a href="https://www.instagram.com/johnnygioeli/" target="_blank">
@@ -211,6 +219,13 @@
                     <div class="project"><img src="images/3.jpeg&amp;blur" alt=""/></div>
                     <div class="project"><img src="images/4.png&amp;blur" alt=""/></div>
                     <div class="project"><img src="images/5.png&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/7.jpg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/8.webp&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/9.jpg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/10.jpg&amp;blur" alt=""/></div>    
+                    <div class="project"><img src="images/11.jpg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/12.jpg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/13.jpg&amp;blur" alt=""/></div>
                   </div>
                   <div class="project-screen">
                     <div class="project-detail">
@@ -219,6 +234,13 @@
                         <div class="project"><img src="images/3.jpeg" alt=""/></div>
                         <div class="project"><img src="images/4.png" alt=""/></div>
                         <div class="project"><img src="images/5.png" alt=""/></div>
+                        <div class="project"><img src="images/7.jpg" alt=""/></div>
+                        <div class="project"><img src="images/8.webp" alt=""/></div>
+                        <div class="project"><img src="images/9.jpg" alt=""/></div>
+                        <div class="project"><img src="images/10.jpg" alt=""/></div>
+                        <div class="project"><img src="images/11.jpg" alt=""/></div>
+                        <div class="project"><img src="images/12.jpg" alt=""/></div>
+                        <div class="project"><img src="images/13.jpg" alt=""/></div>
                     </div>
                     <div class="screen-frame"></div>
                   </div>
@@ -230,6 +252,7 @@
 
     <section>
         <h2>Watch on YouTube</h2>
+        <p>Watch Johnny Gioeli's music videos, live performances, and more on his official YouTube channel.</p>
         <div class="video-links">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/yL-KmMZSnNc?si=Cukaxo1-Sstt_AJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hYYBFSRv_gc?si=hSPD-Lz7ds-roRcG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>One Voice</iframe>
@@ -247,10 +270,55 @@
     </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Johnny Gioeli. All rights reserved.</p>
-    </footer>
+
         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
+                <div id="gdpr-banner"
+            style="display: none; position: fixed; bottom: 0; width: 100%; height: 40%; background: #edf5db; padding: 0.5em; text-align: center; border-top: 1px solid #ccc;">
+            <p>This site uses cookies to enhance your experience. By continuing to use this site, you agree to our 
+                <a href="gpdr.html" target="_blank" style="color: #333;">Privacy Policy and Terms of Use</a>.
+            </p>
+            <button onclick="aceitarCookies()" style="border-radius: 6px; background: #333; color: antiquewhite; border: #333;padding: 0.8em;">Accept</button>
+        </div>
+
+    <script>
+        function aceitarCookies() {
+            document.getElementById('gdpr-banner').style.display = 'none';
+
+        }
+        window.onload = function () {
+            // verificar se o usuário já aceitou a política de privacidade
+            // Se não, mostrar o banner
+            document.getElementById('gdpr-banner').style.display = 'block';
+        }
+    </script>
+    <div id="gdpr-banner" 
+    style="display: none; position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 1em; text-align: center; border-top: 2px solid #555;">
+   <p>This site uses cookies to enhance your experience. By continuing to use this site, you agree to our 
+       <a href="gpdr.html" target="_blank" style="color: #333;">Privacy Policy and Terms of Use</a>.
+   </p>
+   <button onclick="acceptCookies()" 
+           style="border-radius: 6px; background: #333; color: #333; border: none; padding: 0.5em 1em; cursor: pointer;">
+       Accept
+   </button>
+</div>
+
+<script>
+   function acceptCookies() {
+       document.getElementById('gdpr-banner').style.display = 'none';
+       // Opcional: Você pode armazenar um cookie ou localStorage para lembrar a escolha do usuário
+       localStorage.setItem('gdprAccepted', 'true');
+   }
+
+   window.onload = function() {
+       // Verifica se o usuário já aceitou a política de privacidade
+       if (!localStorage.getItem('gdprAccepted')) {
+           document.getElementById('gdpr-banner').style.display = 'block';
+       }
+   }
+</script>
+<footer>
+    <p>&copy; 2024 Johnny Gioeli. All rights reserved.</p>
+</footer>
 </body>
 </html>

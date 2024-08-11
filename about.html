@@ -7,7 +7,7 @@
     <title>Johnny Gioeli | About</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -19,6 +19,9 @@
             padding: 20px 0;
             text-align: center;
         }
+        header h1 {
+            font-weight: 400;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -29,6 +32,7 @@
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
+            text-transform: uppercase;
         }
         nav a:hover {
             background-color: #555;
@@ -37,6 +41,19 @@
             padding: 20px;
             max-width: 900px;
             margin: 0 auto;
+        }
+        section {
+            padding: 40px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        section p {
+            font-size: 1em;
+            text-align: center;
+            margin-bottom: 40px;
+            text-align: justify;
         }
         .bio-image {
             width: 100%;
@@ -48,38 +65,41 @@
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             margin-top: 20px;
+            font: 0.8em sans-serif;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Johnny Gioeli</h1>
-        <p>About</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2.png" style="border-radius: 20px;" alt="Johnny Gioeli">
+            </a><h1>Johnny Gioeli</h1>
+        </div>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="content">
+    <section class="content">
         <img src="images/about-3.jpg" alt="Johnny Gioeli" class="bio-image">
         <h2>About Johnny Gioeli</h2>
         <p>Johnny Gioeli is an American singer and songwriter, best known as the lead vocalist for the bands Hardline, Crush 40, and Axel Rudi Pell. With a career spanning over three decades, Johnny has become a well-respected figure in the rock and metal music scenes, recognized for his powerful voice and dynamic stage presence.</p>
 
         <p>Born and raised in Brooklyn, New York, Johnny began his musical journey at a young age, inspired by the rock legends of the 70s and 80s. He first gained prominence as the frontman of the band Hardline, whose debut album, "Double Eclipse," released in 1992, became an instant hit among rock fans.</p>
-
-        <p>In addition to his work with Hardline, Johnny is also widely known for his collaborations with the German guitarist Axel Rudi Pell, as well as his role as the vocalist for the video game band Crush 40, which has a dedicated fanbase thanks to their contributions to the Sonic the Hedgehog video game series.</p>
         <img src="images/hardline.jpg" alt="Hardline" class="bio-image">
+        <p>In addition to his work with Hardline, Johnny is also widely known for his collaborations with the German guitarist Axel Rudi Pell, as well as his role as the vocalist for the video game band Crush 40, which has a dedicated fanbase thanks to their contributions to the Sonic the Hedgehog video game series.</p>
+        <img src="images/crush40.png" alt="Crush 40" class="bio-image">
         <p>Throughout his career, Johnny has continued to evolve as an artist, exploring various musical styles while maintaining his roots in rock and metal. His dedication to his craft and his fans is evident in every performance, whether he's on stage with his bands or working on solo projects.</p>
-
+        <img src="images/Axel-Rudi-Pell.jpg" alt="Crush 40" class="bio-image">
         <p>Johnny's passion for music extends beyond his performances; he is also actively involved in mentoring and supporting young musicians, helping them navigate the complexities of the music industry.</p>
         <img src="images/singer.png" alt="Singer" class="bio-image">
-    </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Johnny Gioeli. All rights reserved.</p>
