@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/lightbox.css" rel="stylesheet" />
-    <script src="js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <title>Johnny Gioeli | Official Website</title>
     <style>
@@ -61,20 +62,19 @@
             font-size: 1.5em;
             text-align: center;
         }
+        section p {
+            font-size: 1em;
+            text-align: center;
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
         }
-
-        section p {
-            font-size: 1em;
-            text-align: center;
-        }
         .gallery img {
-            width: 500px;
-            height: 300px;
+            width: 600px;
+            height: auto;
             object-fit: cover;
             border-radius: 5px;
         }
@@ -133,35 +133,56 @@
     </nav>
 
     <div class="hero">
-        <h1>Welcome to Johnny Gioeli's Official Website</h1>
+        <h1>Welcome to Johnny Gioeli's Fan Website</h1>
     </div>
 
     <section>
-        <h2>Latest News</h2>
+        <h2>Social Media</h2>
         <p>Stay updated with the latest news from Johnny Gioeli, including new releases, tour dates, and more.</p>
+        <div class="socail_links">
+
+                    <a href="https://www.facebook.com/johnnygioeliofficial" target="_blank">
+                        <i class=" fa fa-facebook "></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/c/JohnnyGioeliOfficial" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="https://x.com/Crush40Johnny?mx=2" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/johnnygioeli/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+        </div>
     </section>
     <section>
         <h2>Photo Gallery</h2>
         <p>View photos of Johnny Gioeli from his concerts, music videos, and more.</p>
         <div class="gallery">
-            <a href="images/1.jpeg" data-lightbox="gallery">
-                <img src="images/1.jpeg" alt="Gallery Image 1">
-            </a>
-            <a href="images/2.jpg" data-lightbox="gallery">
-                <img src="images/2.jpg" alt="Gallery Image 2">
-            </a>
-            <a href="images/3.jpeg" data-lightbox="gallery">
-                <img src="images/3.jpeg" alt="Gallery Image 3">
-            </a>
-            <a href="images/4.png" data-lightbox="gallery">
-                <img src="images/4.png" alt="Gallery Image 4">
-            </a>
-            <a href="images/5.png" data-lightbox="gallery">
-                <img src="images/5.png" alt="Gallery Image 5">
-            </a>
-            <a href="images/1.jpeg" data-lightbox="gallery">
-                <img src="images/1.jpeg" alt="Gallery Image 6">
-            </a>
+            <div class="section section-project">
+                <div class="project-carousel">
+                  <div class="project-strip">
+                    <div class="project"><img src="images/1.jpeg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/2.jpg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/3.jpeg&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/4.png&amp;blur" alt=""/></div>
+                    <div class="project"><img src="images/5.png&amp;blur" alt=""/></div>
+                  </div>
+                  <div class="project-screen">
+                    <div class="project-detail">
+                        <div class="project"><img src="images/1.jpeg" alt=""/></div>
+                        <div class="project"><img src="images/2.jpg" alt=""/></div>
+                        <div class="project"><img src="images/3.jpeg" alt=""/></div>
+                        <div class="project"><img src="images/4.png" alt=""/></div>
+                        <div class="project"><img src="images/5.png" alt=""/></div>
+                    </div>
+                    <div class="screen-frame"></div>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
     
@@ -188,6 +209,7 @@
     <footer>
         <p>&copy; 2024 Johnny Gioeli. All rights reserved.</p>
     </footer>
-
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
