@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="path-to-lightbox/css/lightbox.css" rel="stylesheet" />
+    <script src="path-to-lightbox/js/lightbox-plus-jquery.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <title>Johnny Gioeli | Official Website</title>
     <style>
         body {
@@ -29,6 +32,8 @@
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
+            text-transform: uppercase;
+
         }
         nav a:hover {
             background-color: #555;
@@ -46,15 +51,26 @@
         }
         .hero h1 {
             font-size: 2.5em;
+            text-align: center;
         }
+
         section {
             padding: 20px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            text-align: center;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
+        }
+
+        section p {
+            font-size: 1em;
+            text-align: center;
         }
         .gallery img {
             width: 500px;
@@ -95,14 +111,19 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+            font: 0.8em sans-serif;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Johnny Gioeli</h1>
-        <p>Official Website</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo2.png" style="border-radius: 20px;" alt="Johnny Gioeli">
+            </a><h1>Johnny Gioeli</h1>
+        </div>
+       
     </header>
 
     <nav>
@@ -119,18 +140,31 @@
         <h2>Latest News</h2>
         <p>Stay updated with the latest news from Johnny Gioeli, including new releases, tour dates, and more.</p>
     </section>
-
     <section>
         <h2>Photo Gallery</h2>
+        <p>View photos of Johnny Gioeli from his concerts, music videos, and more.</p>
         <div class="gallery">
-            <img src="images/1.jpeg" alt="Gallery Image 1">
-            <img src="images/2.jpg" alt="Gallery Image 2">
-            <img src="images/3.jpeg" alt="Gallery Image 3">
-            <img src="images/4.png" alt="Gallery Image 4">
-            <img src="images/5.png" alt="Gallery Image 5">
-            <img src="images/1.jpeg" alt="Gallery Image 6">
+            <a href="images/1.jpeg" data-lightbox="gallery">
+                <img src="images/1.jpeg" alt="Gallery Image 1">
+            </a>
+            <a href="images/2.jpg" data-lightbox="gallery">
+                <img src="images/2.jpg" alt="Gallery Image 2">
+            </a>
+            <a href="images/3.jpeg" data-lightbox="gallery">
+                <img src="images/3.jpeg" alt="Gallery Image 3">
+            </a>
+            <a href="images/4.png" data-lightbox="gallery">
+                <img src="images/4.png" alt="Gallery Image 4">
+            </a>
+            <a href="images/5.png" data-lightbox="gallery">
+                <img src="images/5.png" alt="Gallery Image 5">
+            </a>
+            <a href="images/1.jpeg" data-lightbox="gallery">
+                <img src="images/1.jpeg" alt="Gallery Image 6">
+            </a>
         </div>
     </section>
+    
 
     <section>
         <h2>Watch on YouTube</h2>
@@ -144,16 +178,11 @@
     </section>
 
     <section class="playlists">
-        <h2>Playlists</h2>
+        <h2>Playlist</h2>
+        <p>Listen to Johnny Gioeli's music on Spotify.</p>
         <div class="playlist">
-            <iframe src="https://open.spotify.com/embed/playlist/1h5qJ9X24UbeIN2O1Tso7z" allow="encrypted-media"></iframe>
-        </div>
-        <div class="playlist">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4s9dOK4QWXof" allow="encrypted-media"></iframe>
-        </div>
-        <div class="playlist">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4nVuvOYwnjF" allow="encrypted-media"></iframe>
-        </div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6gtOM3Nj0R4IZRPnlTGJ2Q?utm_source=generator&theme=0" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
     </section>
 
     <footer>
