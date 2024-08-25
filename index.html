@@ -10,268 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <title>Johnny Gioeli | Official Website</title>
-    <style>
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-weight: 400;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            text-transform: uppercase;
-
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                padding: 10px;
-                border-bottom: 1px solid #fff;
-            }
-        }
-
-        .hero {
-            background-image: url('images/6.png');
-            background-size: cover;
-            background-position: center;
-            height: 900px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            text-shadow: 3px 3px 5px rgba(248, 247, 247, 0.979);
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            .hero {
-                height: 400px;
-            }
-
-            .hero h1 {
-                font-size: 2.5em;
-                padding: 0 10px;
-                color: #000;
-            }
-        }
-
-        section {
-            padding: 40px;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        section p {
-            font-size: 1.2rem;
-            text-align: center;
-        }
-
-        .social_links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .social_links a {
-            color: #333;
-            font-size: 2em;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-        }
-
-        .social_links a:hover {
-            color: #555;
-            scale: 1.3;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .gallery img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        @media (min-width: 1024px) {
-            .gallery img {
-                width: 800px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1023px) {
-            .gallery img {
-                width: 30em;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .gallery img {
-                display: block;
-                
-            }
-        }
-
-        .gallery img:hover {
-            transform: scale(1.01);
-        }
-
-        .slick-prev,
-        .slick-next {
-            background-color: #343a4091;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            font-size: 0.9rem;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .slick-prev {
-            left: -50px;
-
-        }
-
-        .slick-next {
-            right: -50px;
-
-        }
-
-        .slick-prev:hover,
-        .slick-next:hover {
-            background-color: #495057f1;
-
-            transform: scale(1.01);
-
-        }
-
-        .slick-prev.slick-disabled,
-        .slick-next.slick-disabled {
-
-            cursor: not-allowed;
-
-            transform: none;
-
-        }
-
-        @media (max-width: 768px) {
-
-            .slick-prev,
-            .slick-next {
-                font-size: 14px;
-
-                padding: 8px 16px;
-
-                left: -35px;
-
-                right: -35px;
-
-            }
-        }
-
-        .video-links {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .video-links a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .video-links a:hover {
-            background-color: #333;
-        }
-
-        .playlists {
-            margin-top: 20px;
-        }
-
-        .playlist iframe {
-            width: 100%;
-            max-width: 660px;
-            height: 380px;
-            border: none;
-            margin: 20px auto;
-            display: block;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            font: 0.8em sans-serif;
-        }
-
-        @media (max-width: 600px) {
-            #gdpr-banner {
-                font-size: 0.9em;
-                padding: 0.5em;
-            }
-
-            #gdpr-banner button {
-                padding: 0.4em 0.8em;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -299,23 +40,18 @@
         <h2>Social Media</h2>
         <p>Stay updated with the latest news from Johnny Gioeli, including new releases, tour dates, and more.</p>
         <div class="social_links">
-
             <a href="https://www.facebook.com/johnnygioeliofficial" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
-
             <a href="https://www.youtube.com/c/JohnnyGioeliOfficial" target="_blank">
                 <i class="fab fa-youtube"></i>
             </a>
-
             <a href="https://x.com/Crush40Johnny?mx=2" target="_blank">
                 <i class="fab fa-x"></i>
             </a>
-
             <a href="https://www.instagram.com/johnnygioeli/" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
-
         </div>
     </section>
 
@@ -336,9 +72,7 @@
             <div class="project"><img src="images/12.jpg" alt="Image 12"></div>
             <div class="project"><img src="images/13.webp" alt="Image 13"></div>
         </div>
-
     </section>
-
 
     <section>
         <h2>Watch on YouTube</h2>
@@ -360,7 +94,6 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         </div>
     </section>
 
@@ -375,51 +108,49 @@
                 loading="lazy"></iframe>
         </div>
     </section>
-
+    
+    <footer>
+        <p>&copy; 2024 Johnny Gioeli Fan. All rights reserved.</p>
+    </footer>
 
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
     <script src="./script.js"></script>
 
-
     <script>
-        function aceitarCookies() {
-            document.getElementById('gdpr-banner').style.display = 'none';
-
-        }
-        window.onload = function () {
-            document.getElementById('gdpr-banner').style.display = 'block';
-        }
-    </script>
-    <div id="gdpr-banner"
-        style="display: none; position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 1em; text-align: center; border-top: 2px solid #555; z-index: 1000; font-size: 1em;">
-        <p>This site uses cookies to enhance your experience. By continuing to use this site, you agree to our
-            <a href="gpdr.html" target="_blank" style="color: #fff; text-decoration: underline;">Privacy Policy and
-                Terms of Use</a>.
-        </p>
-        <button onclick="acceptCookies()"
-            style="border-radius: 6px; background: #fff; color: #333; border: none; padding: 0.5em 1em; cursor: pointer; font-size: 1em;">
-            Accept
-        </button>
-    </div>
-
-
-    <script>
-        function acceptCookies() {
-            document.getElementById('gdpr-banner').style.display = 'none';
-            localStorage.setItem('gdprAccepted', 'true');
-        }
-
-        window.onload = function () {
-            if (!localStorage.getItem('gdprAccepted')) {
-                document.getElementById('gdpr-banner').style.display = 'block';
+        $(document).ready(function() {
+            // Função para aceitar cookies e esconder o banner
+            function acceptCookies() {
+                $('#gdpr-banner').hide();
+                localStorage.setItem('gdprAccepted', 'true');
             }
-        }
-
+    
+            // Verifica se os cookies foram aceitos
+            if (localStorage.getItem('gdprAccepted') === null) {
+                $('#gdpr-banner').show();
+            } else {
+                $('#gdpr-banner').hide();
+            }
+    
+            // Adiciona evento ao botão para aceitar cookies
+            $('#gdpr-banner button').on('click', function() {
+                acceptCookies();
+            });
+        });
     </script>
-    <footer>
-        <p>&copy; 2024 Johnny Gioeli Fan. All rights reserved.</p>
-    </footer>
-</body>
+    
 
+<div id="gdpr-banner"
+    style="display: none; position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 1em; text-align: center; border-top: 2px solid #555; z-index: 1000; font-size: 1em;">
+    <p>This site uses cookies to enhance your experience. By continuing to use this site, you agree to our
+        <a href="gpdr.html" target="_blank" style="color: #fff; text-decoration: underline;">Privacy Policy and
+            Terms of Use</a>.
+    </p>
+    <button style="border-radius: 6px; background: #fff; color: #333; border: none; padding: 0.5em 1em; cursor: pointer; font-size: 1em;">
+        Accept
+    </button>
+</div>
+
+    </div>
+</body>
 </html>
