@@ -40,16 +40,18 @@ nav a {
 
 nav a:hover {
   background-color: #555;
+  border-radius: 15px;
 }
 
 @media (max-width: 600px) {
   nav {
       flex-direction: column;
+      display: flex;
+      align-items: center;
   }
 
   nav a {
       padding: 10px;
-      border-bottom: 1px solid #fff;
   }
 }
 
