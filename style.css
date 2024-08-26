@@ -123,7 +123,7 @@ section p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   background-color: black;
 }
 
@@ -137,7 +137,7 @@ section p {
 
 @media (min-width: 1024px) {
   .gallery img {
-      width: 800px;
+      width: 75%;
   }
 }
 
