@@ -6,6 +6,12 @@
 
 > Um site de fãs dedicado ao icônico cantor Johnny Gioeli, projetado para proporcionar uma experiência imersiva e cativante aos seus admiradores. Explore suas músicas, vídeos, e conecte-se com ele nas redes sociais!
 
+## 📸 Captura de Tela
+
+
+![Johnny](https://github.com/user-attachments/assets/1b623017-c987-42c6-991a-cda189948899)
+
+
 ## 🚀 **Deploys**
 - **GitHub Pages:** [simonepenido.github.io/Johnnygioelifan](https://simonepenido.github.io/Johnnygioelifan/)
 - **Netlify:** [johnnygioeliofficial.netlify.app](https://johnnygioeliofficial.netlify.app)
